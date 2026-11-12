@@ -113,6 +113,7 @@
 <script>
 (function(){var h=document.querySelector('.header'),b=document.querySelector('.menu-btn');
 b.addEventListener('click',function(){var o=h.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+document.addEventListener('touchstart',function(){},{passive:true});
 document.querySelectorAll('.nav a').forEach(function(a){a.addEventListener('click',function(){h.classList.remove('open');b.setAttribute('aria-expanded',false)})});})();
 </script>
 </body>
