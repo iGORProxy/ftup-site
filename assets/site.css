@@ -27,11 +27,21 @@ a,button,summary,label{-webkit-tap-highlight-color:transparent}
 .link:hover{text-decoration-color:var(--ink)}
 .meta{font-family:var(--mono);font-size:12.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
 
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:600 16px/1 Onest,sans-serif;padding:16px 26px;border-radius:999px;border:1.5px solid transparent;cursor:pointer;white-space:nowrap;transition:background .15s,border-color .15s}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:600 16px/1 Onest,sans-serif;padding:16px 26px;border-radius:999px;border:1.5px solid transparent;cursor:pointer;white-space:nowrap;transition:background .15s,border-color .15s,transform .1s}
 .btn-ink{background:var(--ink);color:#fff}.btn-ink:hover{background:var(--dark)}
 .btn-out{border-color:#C9C4BA;color:var(--ink);background:none}.btn-out:hover{border-color:var(--ink)}
 .btn-paper{background:var(--paper);color:var(--dark)}.btn-paper:hover{background:#fff}
 .btn-sm{padding:12px 20px;font-size:15px}
+/* відгук на натискання: у кольорах сайту і за формою елемента */
+.btn:active{transform:scale(.96)}
+.btn-ink:active{background:var(--dark)}
+.btn-out:active{border-color:var(--ink);background:#ECE8E0}
+.btn-paper:active{background:#fff}
+.filter:active{background:#DDD8CE}
+.filter[aria-pressed=true]:active{background:var(--dark)}
+.menu-btn:active{background:#ECE8E0}
+.nav a:active,.footer a:active,.link:active,.go:active,.chan a:active,.prose a:active,.brand:active,.meta a:active,.join small a:active{opacity:.5}
+.cd:active,.re:active,.prog:active{opacity:.75}
 
 /* шапка */
 .header{position:sticky;top:0;z-index:50;background:rgba(246,244,240,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
@@ -156,7 +166,9 @@ a,button,summary,label{-webkit-tap-highlight-color:transparent}
 .evc .meta{display:block;margin:14px 0 6px}
 .evc h3{font-size:18px;line-height:1.3;letter-spacing:-.01em;margin-bottom:8px}
 .evc p{font-size:15.5px;line-height:1.55}
-.evc .lk{margin-top:auto;padding-top:12px;font-size:15px;display:flex;gap:6px 18px;flex-wrap:wrap}
+.evc .lk{margin-top:auto;padding-top:12px}
+.evc .go{font-size:15px;font-weight:600;color:var(--ink);text-decoration:underline;text-underline-offset:3px;text-decoration-color:#9FB0B6}
+.evc .go:hover{text-decoration-color:var(--ink)}
 .ev{display:grid;grid-template-columns:84px 190px 1fr;gap:24px;padding:22px 0;border-top:1px solid var(--line);align-items:start}
 .ev img{width:84px;aspect-ratio:4/5;object-fit:cover;border-radius:10px;background:#E9E5DD}
 .ev .ph{width:84px}
