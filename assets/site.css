@@ -283,3 +283,10 @@ a,button,summary,label{-webkit-tap-highlight-color:transparent}
   .footer{margin-top:60px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+/* питання й відповіді */
+.faq{max-width:760px}
+.faq h3{font-size:19px;line-height:1.35;letter-spacing:-.01em;margin:26px 0 8px}
+.faq h3:first-child{margin-top:0}
+.faq p{font-size:17px;line-height:1.7;margin:0}
+.faq a{color:var(--ink);text-decoration:underline;text-decoration-color:#9FB0B6;text-underline-offset:3px}
+.faq a:active{opacity:.5}
